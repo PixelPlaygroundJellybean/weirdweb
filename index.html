@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>weird website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="floating-emojis">
+        <span>✨</span><span>💖</span><span>🎉</span><span>🌟</span
+        ><span>🎈</span>
+      </div>
+
+      <!-- *** Landing Page (NOW INITIALLY ACTIVE) *** -->
+      <div id="landing-page" class="page active">
+        <h1 class="title landing-title">hi i am iro welcome to weird website make sure to switch pages slowly</h1>
+        <!-- Make sure 'welcome-image.jpg' or your image exists in the same folder or adjust path -->
+        <img
+          src="videos/iro.jpg"
+          alt="welcome graphics"
+          class="landing-image"
+        />
+        <p class="subtitle landing-subtitle">have a great day!
+        </p>
+        <button id="enter-button" class="fancy-button large">Enter</button>
+        <div class="landing-glow"></div>
+      </div>
+
+      <!-- Welcome Page (No longer initially active) -->
+      <div id="welcome-page" class="page">
+        <h1 class="title">Happy Birthday huda! 🎉</h1>
+        <p class="subtitle">Let's celebrate your special day.</p>
+        <button id="start-button" class="fancy-button">
+          Start Celebration
+        </button>
+        <div class="balloons">
+          <span class="balloon" style="left: 80%">😵‍💫</span>
+          <span class="balloon" style="left: 40%">👻</span>
+          <span class="balloon" style="left: 35%">😭</span>
+          <span class="balloon" style="left: 10%">🎈</span>
+          <span class="balloon" style="left: 80%">😵</span>
+          <span class="balloon" style="left: 60%">🎈</span>
+          <span class="balloon" style="left: 30%">😊</span>
+          <span class="balloon" style="left: 60%">🎈</span>
+          <span class="balloon" style="left: 82%">😝</span>
+          <span class="balloon" style="left: 20%">👻</span>
+        </div>
+      </div>
+
+      <!-- Birthday Quotes Page -->
+      <div id="quotes-page" class="page">
+        <h2 class="title">Birthday Wishes ✨</h2>
+        <p id="quoteText" class="quote"></p>
+        <div class="button-row">
+          <button id="quotes-back" class="fancy-button small">Go Back</button>
+          <button id="quotes-next" class="fancy-button small">Next</button>
+        </div>
+        <div class="confetti"></div>
+      </div>
+
+      <!-- Cake Selection Page -->
+      <div id="cake-page" class="page">
+        <h2 class="title">Choose Your Cake 🎂</h2>
+        <div class="cake-options">
+          <div class="cake-option" data-cake="1">
+            <img src="videos/5.png" alt="Floral Cake" />
+            <!-- Ensure this path is correct -->
+            <p class="caption">cake 3</p>
+          </div>
+          <div class="cake-option" data-cake="2">
+            <img src="videos/7.png" alt="Cupcake" />
+            <!-- Ensure this path is correct -->
+            <p class="caption">cake 2</p>
+          </div>
+          <div class="cake-option" data-cake="3">
+            <img
+              src="https://images.pexels.com/photos/140831/pexels-photo-140831.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              alt="Fruit Cake"
+            />
+            <p class="caption">cake 1</p>
+          </div>
+        </div>
+        <div class="button-row">
+          <button id="cake-back" class="fancy-button small">Go Back</button>
+        </div>
+        <div class="sparkles"></div>
+      </div>
+
+      <!-- Final Animation Video Page -->
+      <div id="final-page" class="page">
+        <h2 class="title">Surprise lol 🎆</h2>
+        <video
+          id="finalVideo"
+          class="final-video"
+          controls
+          autoplay
+          loop
+        ></video>
+        <div class="button-row">
+          <button id="final-back" class="fancy-button small">Go Back</button>
+        </div>
+        <div class="fireworks"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
